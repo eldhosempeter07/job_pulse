@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "944346392654",
+    "project_id": "job-finding-68663",
+    "storage_bucket": "job-finding-68663.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944346392654:android:b7e23ae1ac49a6ba5b3b1f",
+        "android_client_info": {
+          "package_name": "com.example.job_recuter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaWpKNtYYZ9qCnISxlJOVJFtcioTj5P6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
