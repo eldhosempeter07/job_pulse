@@ -1,8 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:job_recuter/screens/home_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:job_recuter/screens/login_screen.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(); // Initialize Firebase
+  // await userData.loadDataFromFirebase(); // Load data from Firebase
   runApp(MyApp());
 }
 
@@ -67,6 +72,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     // Add a delay to simulate the splash screen
     Future.delayed(Duration(seconds: 2), () {
+      // Navigate to the AuthenticationWrapper after the delay
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => LoginScreen()),
@@ -79,7 +85,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Color(0x0F0F1F),
       body: Center(
-        child: Image.asset('assets/images/exodus.gif')
+        child: Image.asset('assets/images/exodus.gif'), // Your GIF path
       ),
     );
   }
