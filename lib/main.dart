@@ -1,8 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:job_recuter/screens/home_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:job_recuter/screens/login_screen.dart';
+import 'package:job_recuter/screens/authentication_wrapper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -75,7 +73,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Navigate to the AuthenticationWrapper after the delay
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginScreen()),
+        MaterialPageRoute(builder: (context) => AuthenticationWrapper()),
       );
     });
   }

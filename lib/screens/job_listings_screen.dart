@@ -1,31 +1,31 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class JobListingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Jobs',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: JobListingPage(),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
+class JobListingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text('Job Listing'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Job Portal!',
+              'Job Listings!',
               style: TextStyle(fontSize: 24),
             ),
             SizedBox(height: 20),
